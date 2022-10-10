@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>targil</title>
+</head>
+<body>
+    <form>
+        <p> row number : <input id="id1_numberrow" type="number" /></p>
+        <p> col number : <input id="id1_numbercol" type="number" /></p>
+        <p>click here : <button type="button" onclick="buttonclick()"> Click me! </button></p>
+     </form>
+    <script>
+        function buttonclick() {
+        let row = parseInt(document.getElementById('id1_numberrow').value)
+        let col = parseInt(document.getElementById('id1_numbercol').value)
+
+        for (let i = 1; row >= i; i++){
+            document.write('<br/>')
+            document.write('0')
+
+
+            for (let j = 1; col > j; j++){
+                document.write('0')
+            }
+
+        }
+    }
+
+       
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>targil 5</title>
+</head>
+<body>
+    <script>
+        //קלוט מספרים אי-שליליים עד הזקיף -99 והצג את סכומם
+       let x = parseInt(prompt('enter number: to exit enter -99'))
+       let sum = 0
+
+        while(x >= 0){
+            if (x == -99){
+                break;
+            }
+                sum = sum + x
+                x = parseInt(prompt('enter number: to exit enter -99'))
+            }
+            document.write(`${sum}`)
+
+    </script>
+    
+</body>
+</html>

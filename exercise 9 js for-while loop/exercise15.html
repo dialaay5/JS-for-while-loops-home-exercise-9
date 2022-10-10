@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>targil 15</title>
+</head>
+<body>
+    <form>
+        <p> polindrome number? : <input id="id1_number" type="number" /></p>
+        <p>click here : <button type="button" onclick="buttonclick()"> Click me! </button></p>
+    </form>
+
+    <script>
+            function buttonclick() {
+                let x = parseInt(document.getElementById('id1_number').value)
+                let y = 0
+                let z = x
+
+                while( z > 0){
+                y = y + (z % 10)
+                z = Math.floor(z / 10)
+                y = y * 10
+                }
+                if (x == (y / 10)){
+                    document.write('polindrome')
+                }
+                else {
+                    document.write('not a polindrome')
+                }
+            }
+
+    </script>
+    
+</body>
+</html>
